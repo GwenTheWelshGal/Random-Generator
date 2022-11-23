@@ -6,9 +6,21 @@
     </head>
     <body>
         <h1 align="center">Random Generator</h1>
-        <p align="center">Welcome. On this page, you will find a simplistic random generator that I have coded in Python. I trust that you will find it useful.</p>
-        <p align="center">To use it, enter a list of items with each list separated by a semicolon - <b>;</b> - in the boxes on the left and the right, and then click the <em>Start</em> button. Make sure that both lists have the same number of items, or it will not work.</p>
-        <p align="center">Below, a list of outputs will be displayed.</p>
+        <align="center">
+            <p>Hi. On this page, you will find a simplistic random generator that I have put together using a combination of Python and HTML, and I hope that you will find it useful in some capacity. To use it, enter a list of items in the text box on the left and an equally large list in the text box on the right. If the lists are not the same length, then it will not work. Once you've done so, click <em>Start</em>. Below, a list of outputs will be displayed.</p>
+            <p>Keep in mind, however, that this is very much a work in progress.</p>
+        </align>
+
+        <div class="rows">
+            <div class="ColumnA">
+                <label for="ListA">List A</label>
+                <textarea id="ListA" name="ListA" rows="20" cols="50"></textarea>
+            </div>
+            <div class="ColumnB">
+                <label for="ListB">List B</label>
+                <textarea id="ListB" name="ListB" rows="20" cols="50"></textarea>
+            </div>
+        </div>
         <!--
             Right now, I'm visualizing a couple of boxes in which inputs can be entered, with each item separated either by a semicolon or either being on a new line.
             The START button will randomize the list by shuffling both lists behind the scenes and popping said selection from the list.
